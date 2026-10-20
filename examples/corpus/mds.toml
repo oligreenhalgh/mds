@@ -1,0 +1,22 @@
+# Configuration for the sample corpus. Ingest root: examples/corpus/docs
+# alice can read everything; bob cannot read docs/restricted/.
+[store]
+data_dir = ".mds"
+
+[[principals]]
+name = "alice"
+groups = ["staff", "maintainers"]
+trust = "person"
+
+[[principals]]
+name = "bob"
+groups = ["staff"]
+trust = "agent"
+
+[[acl_rules]]
+glob = "restricted/**"
+groups = ["maintainers"]
+
+[[acl_rules]]
+glob = "**"
+groups = ["staff"]

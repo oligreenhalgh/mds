@@ -9,10 +9,10 @@ Tasks in the same wave touch different modules and can run in parallel.
 ## Wave 0: foundations (maintainer)
 
 - [x] **T00 Decisions.** Licence, name, stack, layout. Done (see `decisions/`).
-- [ ] **T01 Sample corpus.** Choose 30–100 public, licence-compatible documents
+- [x] **T01 Sample corpus.** Choose 30–100 public, licence-compatible documents
   with real containment, cross-references, revisions and amendments. Record
   sources and licences in `examples/corpus/SOURCES.md`.
-- [ ] **T02 Golden questions.** 30–50 questions over the corpus in
+- [x] **T02 Golden questions.** 30–50 questions over the corpus in
   `tests/golden/questions.yaml` (format in `tests/golden/README.md`), covering
   every dimension, `valid_at`, `as_of_csn`, conflicts and at least two
   principals.

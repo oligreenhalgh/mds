@@ -1,0 +1,1101 @@
+{
+ "source": "https://github.com/python/peps",
+ "commit": "5bc3e11b80e1f9afa0f2e34b6eb3336d58a282f3",
+ "stage1_commit": "8e51108bbc8dcb1d4db21c0d93b9b1412ba81a17",
+ "excluded_no_licence_statement": [
+  5,
+  216,
+  600
+ ],
+ "peps": {
+  "101": {
+   "title": "Doing Python Releases 101",
+   "status": "Active",
+   "type": "Informational",
+   "topic": "",
+   "created": "22-Aug-2001",
+   "replaces": [
+    102
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "102": {
+   "title": "Doing Python Micro Releases",
+   "status": "Superseded",
+   "type": "Informational",
+   "topic": "",
+   "created": "09-Jan-2002",
+   "replaces": [],
+   "superseded_by": [
+    101
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "215": {
+   "title": "String Interpolation",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "24-Jul-2000",
+   "replaces": [],
+   "superseded_by": [
+    292
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "241": {
+   "title": "Metadata for Python Software Packages",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "12-Mar-2001",
+   "replaces": [],
+   "superseded_by": [
+    314
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "245": {
+   "title": "Python Interface Syntax",
+   "status": "Rejected",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "11-Jan-2001",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "246": {
+   "title": "Object Adaptation",
+   "status": "Rejected",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "21-Mar-2001",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "247": {
+   "title": "API for Cryptographic Hash Functions",
+   "status": "Final",
+   "type": "Informational",
+   "topic": "",
+   "created": "23-Mar-2001",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "248": {
+   "title": "Python Database API Specification v1.0",
+   "status": "Final",
+   "type": "Informational",
+   "topic": "",
+   "created": "08-May-1996",
+   "replaces": [],
+   "superseded_by": [
+    249
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "249": {
+   "title": "Python Database API Specification v2.0",
+   "status": "Final",
+   "type": "Informational",
+   "topic": "",
+   "created": "12-Apr-1999",
+   "replaces": [
+    248
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "287": {
+   "title": "reStructuredText Docstring Format",
+   "status": "Active",
+   "type": "Informational",
+   "topic": "",
+   "created": "25-Mar-2002",
+   "replaces": [
+    216
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "291": {
+   "title": "Backward Compatibility for the Python 2 Standard Library",
+   "status": "Superseded",
+   "type": "Informational",
+   "topic": "",
+   "created": "06-Jun-2002",
+   "replaces": [],
+   "superseded_by": [
+    387
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "292": {
+   "title": "Simpler String Substitutions",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "18-Jun-2002",
+   "replaces": [
+    215
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "314": {
+   "title": "Metadata for Python Software Packages 1.1",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "12-Apr-2003",
+   "replaces": [
+    241
+   ],
+   "superseded_by": [
+    345
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "333": {
+   "title": "Python Web Server Gateway Interface v1.0",
+   "status": "Final",
+   "type": "Informational",
+   "topic": "",
+   "created": "07-Dec-2003",
+   "replaces": [],
+   "superseded_by": [
+    3333
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "345": {
+   "title": "Metadata for Python Software Packages 1.2",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "28-Apr-2005",
+   "replaces": [
+    314
+   ],
+   "superseded_by": [
+    566
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "354": {
+   "title": "Enumerations in Python",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "20-Dec-2005",
+   "replaces": [],
+   "superseded_by": [
+    435
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "381": {
+   "title": "Mirroring infrastructure for PyPI",
+   "status": "Withdrawn",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "21-Mar-2009",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "382": {
+   "title": "Namespace Packages",
+   "status": "Rejected",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "02-Apr-2009",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "386": {
+   "title": "Changing the version comparison module in Distutils",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "04-Jun-2009",
+   "replaces": [],
+   "superseded_by": [
+    440
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "387": {
+   "title": "Backwards Compatibility Policy",
+   "status": "Active",
+   "type": "Process",
+   "topic": "",
+   "created": "18-Jun-2009",
+   "replaces": [
+    291
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "397": {
+   "title": "Python launcher for Windows",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "15-Mar-2011",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "402": {
+   "title": "Simplified Package Layout and Partitioning",
+   "status": "Rejected",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "12-Jul-2011",
+   "replaces": [
+    382
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "409": {
+   "title": "Suppressing exception context",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "26-Jan-2012",
+   "replaces": [],
+   "superseded_by": [
+    415
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "415": {
+   "title": "Implement context suppression with exception attributes",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "26-Feb-2012",
+   "replaces": [
+    409
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "422": {
+   "title": "Simpler customisation of class creation",
+   "status": "Withdrawn",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "05-Jun-2012",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "426": {
+   "title": "Metadata for Python Software Packages 2.0",
+   "status": "Withdrawn",
+   "type": "Informational",
+   "topic": "Packaging",
+   "created": "30-Aug-2012",
+   "replaces": [
+    345
+   ],
+   "superseded_by": [
+    566
+   ],
+   "requires": [
+    440,
+    508,
+    518
+   ],
+   "folder": "public"
+  },
+  "431": {
+   "title": "Time zone support improvements",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "11-Dec-2012",
+   "replaces": [],
+   "superseded_by": [
+    615
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "433": {
+   "title": "Easier suppression of file descriptor inheritance",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "10-Jan-2013",
+   "replaces": [],
+   "superseded_by": [
+    446
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "435": {
+   "title": "Adding an Enum type to the Python standard library",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "23-Feb-2013",
+   "replaces": [
+    354
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "438": {
+   "title": "Transitioning to release-file hosting on PyPI",
+   "status": "Superseded",
+   "type": "Process",
+   "topic": "Packaging",
+   "created": "15-Mar-2013",
+   "replaces": [],
+   "superseded_by": [
+    470
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "440": {
+   "title": "Version Identification and Dependency Specification",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "18-Mar-2013",
+   "replaces": [
+    386
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "443": {
+   "title": "Single-dispatch generic functions",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "22-May-2013",
+   "replaces": [
+    245,
+    246,
+    3124
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "446": {
+   "title": "Make newly created file descriptors non-inheritable",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "05-Aug-2013",
+   "replaces": [
+    433
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "449": {
+   "title": "Removal of the PyPI Mirror Auto Discovery and Naming Scheme",
+   "status": "Final",
+   "type": "Process",
+   "topic": "Packaging",
+   "created": "04-Aug-2013",
+   "replaces": [
+    381
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "452": {
+   "title": "API for Cryptographic Hash Functions v2.0",
+   "status": "Final",
+   "type": "Informational",
+   "topic": "",
+   "created": "15-Aug-2013",
+   "replaces": [
+    247
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "464": {
+   "title": "Removal of the PyPI Mirror Authenticity API",
+   "status": "Final",
+   "type": "Process",
+   "topic": "Packaging",
+   "created": "02-Mar-2014",
+   "replaces": [
+    381
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "470": {
+   "title": "Removing External Hosting Support on PyPI",
+   "status": "Final",
+   "type": "Process",
+   "topic": "Packaging",
+   "created": "12-May-2014",
+   "replaces": [
+    438
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "484": {
+   "title": "Type Hints",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "29-Sep-2014",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "486": {
+   "title": "Make the Python Launcher aware of virtual environments",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "12-Feb-2015",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "487": {
+   "title": "Simpler customisation of class creation",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "27-Feb-2015",
+   "replaces": [
+    422
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "501": {
+   "title": "General purpose template literal strings",
+   "status": "Withdrawn",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "08-Aug-2015",
+   "replaces": [],
+   "superseded_by": [
+    750
+   ],
+   "requires": [
+    701
+   ],
+   "folder": "public"
+  },
+  "508": {
+   "title": "Dependency specification for Python Software Packages",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "11-Nov-2015",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "509": {
+   "title": "Add a private version to dict",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "04-Jan-2016",
+   "replaces": [],
+   "superseded_by": [
+    699
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "513": {
+   "title": "A Platform Tag for Portable Linux Built Distributions",
+   "status": "Superseded",
+   "type": "Informational",
+   "topic": "Packaging",
+   "created": "19-Jan-2016",
+   "replaces": [],
+   "superseded_by": [
+    600
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "518": {
+   "title": "Specifying Minimum Build System Requirements for Python Projects",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "10-May-2016",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "526": {
+   "title": "Syntax for Variable Annotations",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "09-Aug-2016",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "543": {
+   "title": "A Unified TLS API for Python",
+   "status": "Withdrawn",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "17-Oct-2016",
+   "replaces": [],
+   "superseded_by": [
+    748
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "544": {
+   "title": "Protocols: Structural subtyping (static duck typing)",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "05-Mar-2017",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "554": {
+   "title": "Multiple Interpreters in the Stdlib",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "05-Sep-2017",
+   "replaces": [],
+   "superseded_by": [
+    734
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "563": {
+   "title": "Postponed Evaluation of Annotations",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "08-Sep-2017",
+   "replaces": [],
+   "superseded_by": [
+    649,
+    749
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "566": {
+   "title": "Metadata for Python Software Packages 2.1",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "01-Dec-2017",
+   "replaces": [
+    345
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "571": {
+   "title": "The manylinux2010 Platform Tag",
+   "status": "Superseded",
+   "type": "Informational",
+   "topic": "Packaging",
+   "created": "05-Feb-2018",
+   "replaces": [],
+   "superseded_by": [
+    600
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "585": {
+   "title": "Type Hinting Generics In Standard Collections",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "03-Mar-2019",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "599": {
+   "title": "The manylinux2014 Platform Tag",
+   "status": "Superseded",
+   "type": "Informational",
+   "topic": "Packaging",
+   "created": "29-Apr-2019",
+   "replaces": [],
+   "superseded_by": [
+    600
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "601": {
+   "title": "Forbid return/break/continue breaking out of finally",
+   "status": "Rejected",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "26-Aug-2019",
+   "replaces": [],
+   "superseded_by": [
+    765
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "604": {
+   "title": "Allow writing union types as ``X | Y``",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "28-Aug-2019",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "612": {
+   "title": "Parameter Specification Variables",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "18-Dec-2019",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "615": {
+   "title": "Support for the IANA Time Zone Database in the Standard Library",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "22-Feb-2020",
+   "replaces": [
+    431
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "restricted"
+  },
+  "621": {
+   "title": "Storing project metadata in pyproject.toml",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "22-Jun-2020",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "622": {
+   "title": "Structural Pattern Matching",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "23-Jun-2020",
+   "replaces": [],
+   "superseded_by": [
+    634
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "631": {
+   "title": "Dependency specification in pyproject.toml based on PEP 508",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "20-Aug-2020",
+   "replaces": [],
+   "superseded_by": [
+    621
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "634": {
+   "title": "Structural Pattern Matching: Specification",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "12-Sep-2020",
+   "replaces": [
+    622
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "646": {
+   "title": "Variadic Generics",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "16-Sep-2020",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "649": {
+   "title": "Deferred Evaluation Of Annotations Using Descriptors",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "11-Jan-2021",
+   "replaces": [
+    563
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "665": {
+   "title": "A file format to list Python dependencies for reproducibility of an application",
+   "status": "Rejected",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "29-Jul-2021",
+   "replaces": [],
+   "superseded_by": [
+    751
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "695": {
+   "title": "Type Parameter Syntax",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "15-Jun-2022",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "699": {
+   "title": "Remove private dict version field added in PEP 509",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "03-Oct-2022",
+   "replaces": [
+    509
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "701": {
+   "title": "Syntactic formalization of f-strings",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "15-Nov-2022",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "722": {
+   "title": "Dependency specification for single-file scripts",
+   "status": "Rejected",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "19-Jul-2023",
+   "replaces": [],
+   "superseded_by": [
+    723
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "723": {
+   "title": "Inline script metadata",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "04-Aug-2023",
+   "replaces": [
+    722
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "724": {
+   "title": "Stricter Type Guards",
+   "status": "Withdrawn",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "28-Jul-2023",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "734": {
+   "title": "Multiple Interpreters in the Stdlib",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "06-Nov-2023",
+   "replaces": [
+    554
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "742": {
+   "title": "Narrowing types with TypeIs",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "07-Feb-2024",
+   "replaces": [
+    724
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "748": {
+   "title": "A Unified TLS API for Python",
+   "status": "Draft",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "27-Jun-2024",
+   "replaces": [
+    543
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "749": {
+   "title": "Implementing PEP 649",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Typing",
+   "created": "28-May-2024",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [
+    649
+   ],
+   "folder": "restricted"
+  },
+  "750": {
+   "title": "Template Strings",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "08-Jul-2024",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "751": {
+   "title": "A file format to record Python dependencies for installation reproducibility",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Packaging",
+   "created": "24-Jul-2024",
+   "replaces": [
+    665
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "765": {
+   "title": "Disallow return/break/continue that exit a finally block",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "15-Nov-2024",
+   "replaces": [
+    601
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "773": {
+   "title": "A Python Installation Manager for Windows",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "Release",
+   "created": "21-Jan-2025",
+   "replaces": [
+    397,
+    486
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "3107": {
+   "title": "Function Annotations",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "02-Dec-2006",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "3115": {
+   "title": "Metaclasses in Python 3000",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "07-Mar-2007",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "3119": {
+   "title": "Introducing Abstract Base Classes",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "18-Apr-2007",
+   "replaces": [],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "3124": {
+   "title": "Overloading, Generic Functions, Interfaces, and Adaptation",
+   "status": "Deferred",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "28-Apr-2007",
+   "replaces": [
+    245,
+    246
+   ],
+   "superseded_by": [],
+   "requires": [
+    3107,
+    3115,
+    3119
+   ],
+   "folder": "public"
+  },
+  "3153": {
+   "title": "Asynchronous IO support",
+   "status": "Superseded",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "29-May-2011",
+   "replaces": [],
+   "superseded_by": [
+    3156
+   ],
+   "requires": [],
+   "folder": "public"
+  },
+  "3156": {
+   "title": "Asynchronous IO Support Rebooted: the \"asyncio\" Module",
+   "status": "Final",
+   "type": "Standards Track",
+   "topic": "",
+   "created": "12-Dec-2012",
+   "replaces": [
+    3153
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  },
+  "3333": {
+   "title": "Python Web Server Gateway Interface v1.0.1",
+   "status": "Final",
+   "type": "Informational",
+   "topic": "",
+   "created": "26-Sep-2010",
+   "replaces": [
+    333
+   ],
+   "superseded_by": [],
+   "requires": [],
+   "folder": "public"
+  }
+ }
+}
