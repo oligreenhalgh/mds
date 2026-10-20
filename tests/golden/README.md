@@ -83,8 +83,9 @@ check:
 
 ## Conventions the extractors must follow for this corpus
 
-These are decisions for tasks T22–T23, recorded here because the expected
-answers depend on them.
+The supersession and `in_force` rules below are specified in `DESIGN.md`
+§5.5 and §9.1; they are summarised here because the expected answers depend
+on them.
 
 - **Supersession comes from PEP headers.** `Superseded-By: X` in PEP `b`
   gives the edge `X supersedes b`. `Replaces: Y` in PEP `a` gives
