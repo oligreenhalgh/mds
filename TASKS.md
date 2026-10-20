@@ -23,7 +23,7 @@ Tasks in the same wave touch different modules and can run in parallel.
   Edge, Breadcrumb; dimension registry loaded from
   `src/mds/model/dimensions.yaml` (D §2–4).
   Accept: unit tests for validation rules (id ranges, valid intervals, states).
-- [ ] **T11 Store** (`src/mds/store/`). SQLite schema, append-only writes, CSN
+- [x] **T11 Store** (`src/mds/store/`). SQLite schema, append-only writes, CSN
   counter, commit log, snapshot reads at a CSN, BLAKE3 content store (D §11).
   Accept: tests for append-only behaviour, `as_of_csn` reads, content
   round-trip.

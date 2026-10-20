@@ -14,6 +14,7 @@ def make_breadcrumb(**overrides: Any) -> Breadcrumb:
         "text": "4.2 is amended by the 2023 policy.",
         "author_id": "research-agent",
         "csn": 20,
+        "acl_class": 3,
         "read_set": (ReadSetEntry(7, 1), ReadSetEntry(9, 2)),
     }
     fields.update(overrides)
@@ -59,6 +60,12 @@ def test_author_required() -> None:
 def test_csn_non_negative() -> None:
     with pytest.raises(ModelError, match="csn must be >= 0"):
         make_breadcrumb(csn=-1)
+
+
+def test_acl_class_non_negative() -> None:
+    assert make_breadcrumb().acl_class == 3
+    with pytest.raises(ModelError, match="acl_class must be >= 0"):
+        make_breadcrumb(acl_class=-1)
 
 
 def test_read_set_entry_validation() -> None:

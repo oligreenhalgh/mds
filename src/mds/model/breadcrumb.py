@@ -22,13 +22,18 @@ class ReadSetEntry:
 
 @dataclass(frozen=True, slots=True)
 class Breadcrumb:
-    """A note pinned to one or more atoms, with its author, CSN and read-set."""
+    """A note pinned to one or more atoms, with its author, CSN and read-set.
+
+    `acl_class` is the author's class: readers see only breadcrumbs they could read
+    (DESIGN §7.4).
+    """
 
     breadcrumb_id: int
     atom_ids: tuple[int, ...]
     text: str
     author_id: str
     csn: int
+    acl_class: int
     read_set: tuple[ReadSetEntry, ...] = ()
 
     def __post_init__(self) -> None:
@@ -46,3 +51,4 @@ class Breadcrumb:
         if not self.author_id:
             raise ModelError("author_id must not be empty")
         check_non_negative(self.csn, "csn")
+        check_non_negative(self.acl_class, "acl_class")
