@@ -1,0 +1,41 @@
+PEP: 9999
+Title: Retention of Example Records
+Author: A. Author <a@example.org>,
+        B. Author <b@example.org>
+Status: Final
+Replaces: 9998
+Created: 01-Mar-2023
+
+
+Abstract
+========
+
+This PEP replaces :pep:`9998` with effect from 1 March 2023.
+
+Specification
+=============
+
+Retention
+---------
+
+Keep records for six years.
+
+Example::
+
+    Not a heading
+    -------------
+
+Deletion
+--------
+
+Delete after review.
+
+Notes
+~~~~~
+
+Nested under Deletion.
+
+Copyright
+=========
+
+This document is placed in the public domain.

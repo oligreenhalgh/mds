@@ -34,7 +34,7 @@ Tasks in the same wave touch different modules and can run in parallel.
 
 ## Wave 2: ingestion, engine, seeding
 
-- [ ] **T20 Parsing and normalisation** (`src/mds/ingest/parse.py`). Docling
+- [x] **T20 Parsing and normalisation** (`src/mds/ingest/parse.py`). Docling
   for PDF and DOCX; Markdown, reStructuredText and text natively. Produce
   derivative text, section tree and origin map (D §2.1).
 - [ ] **T21 Containment and re-anchoring** (`src/mds/ingest/`). `contains`
