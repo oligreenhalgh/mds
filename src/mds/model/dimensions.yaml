@@ -1,0 +1,51 @@
+# Built-in dimensions. See DESIGN.md section 3.
+- id: r0
+  name: contains
+  symmetric: false
+  time_bound: false
+  default_operator: boolean
+  writers: [extractor]
+  agent_default_state: pending
+  description: >
+    a structurally contains b (document, section, sub-section). Follow fwd for
+    parts, rev for what something is part of.
+- id: r1
+  name: references
+  symmetric: false
+  time_bound: false
+  default_operator: boolean
+  writers: [extractor, agent]
+  agent_default_state: pending
+  description: >
+    a refers to b (cross-reference, defined term, link). Follow fwd for what
+    something relies on, rev for what relies on it.
+- id: r2
+  name: co_occurs
+  symmetric: true
+  time_bound: false
+  default_operator: max_plus
+  writers: [extractor]
+  agent_default_state: pending
+  description: >
+    a and b concern the same entity. Use to find related material across
+    documents.
+- id: r3
+  name: derived_from
+  symmetric: false
+  time_bound: false
+  default_operator: boolean
+  writers: [extractor, agent]
+  agent_default_state: pending
+  description: >
+    a was derived from b (new version, copy, template). Follow fwd for origins,
+    rev for descendants.
+- id: r4
+  name: supersedes
+  symmetric: false
+  time_bound: true
+  default_operator: boolean
+  writers: [extractor, agent, person]
+  agent_default_state: pending
+  description: >
+    a replaces or amends b from valid_from. Follow rev from an original to find
+    what is currently in force.

@@ -1,0 +1,24 @@
+# Example configuration. See INTERFACES.md section 4.
+[store]
+data_dir = ".mds"
+
+[[principals]]
+name = "alice"
+groups = ["staff", "legal"]
+trust = "person"
+
+[[principals]]
+name = "research-agent"
+groups = ["staff"]
+trust = "agent"
+
+[[acl_rules]]
+glob = "legal/**"
+groups = ["legal"]
+
+[[acl_rules]]
+glob = "**"
+groups = ["staff"]
+
+[dimensions.r4]
+agent_default_state = "pending"

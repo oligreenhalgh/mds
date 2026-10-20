@@ -1,0 +1,54 @@
+[project]
+name = "mds-server"
+version = "0.0.1"
+description = "MDS (Multi-Dimensional Server): an agent-driven, multi-dimensional filing system."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.12"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "python-graphblas>=2024.2",
+  "pyroaring>=1.0",
+  "tantivy>=0.22",
+  "blake3>=0.4",
+  "datasketch>=1.6",
+  "mcp>=1.2",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+pdf = ["docling>=2.0"]
+
+[project.scripts]
+mds-server = "mds.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11", "types-PyYAML"]
+
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mds"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
