@@ -19,7 +19,7 @@ Tasks in the same wave touch different modules and can run in parallel.
 
 ## Wave 1: model and store
 
-- [ ] **T10 Model** (`src/mds/model/`). Dataclasses for Atom, AtomVersion,
+- [x] **T10 Model** (`src/mds/model/`). Dataclasses for Atom, AtomVersion,
   Edge, Breadcrumb; dimension registry loaded from
   `src/mds/model/dimensions.yaml` (D §2–4).
   Accept: unit tests for validation rules (id ranges, valid intervals, states).
