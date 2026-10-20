@@ -27,7 +27,7 @@ Tasks in the same wave touch different modules and can run in parallel.
   counter, commit log, snapshot reads at a CSN, BLAKE3 content store (D §11).
   Accept: tests for append-only behaviour, `as_of_csn` reads, content
   round-trip.
-- [ ] **T12 Config and ACL** (`src/mds/acl/`). Parse `mds.toml`; intern
+- [x] **T12 Config and ACL** (`src/mds/acl/`). Parse `mds.toml`; intern
   `acl_class`; compute principal masks with `pyroaring`; cache and invalidate
   (D §7, I §4).
   Accept: unit tests for rule precedence and mask contents.
