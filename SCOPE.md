@@ -6,8 +6,8 @@ to it, and every read respects time and permissions.
 
 ## Goals
 
-1. `mds-server ingest <folder>` ingests PDF, DOCX, Markdown and plain text from
-   a local folder.
+1. `mds-server ingest <folder>` ingests PDF, DOCX, Markdown, reStructuredText
+   and plain text from a local folder.
 2. Ingestion builds `contains`, `references`, `derived_from`, `co_occurs` and
    `supersedes` edges with deterministic extractors (DESIGN §9).
 3. Engine runs masked, typed traversals with all four operators over

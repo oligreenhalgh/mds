@@ -243,9 +243,24 @@ inforce(c, t, s) = sink( e_cᵀ (or.and)* A_r4ᵀ(s) ⟨E_u ∧ V(t)⟩ )
 ```
 
 Follow `supersedes` in reverse from `c` (from the original to what replaced
-it), keeping only edges valid at `t`, to the end of the chain. If the chain
-branches at `t` (two replacements both valid), return all branches as a
-conflict. Never pick one silently.
+it), keeping only edges valid at `t`, to the end of the chain. The answer is
+the set of **sinks**: atoms reached from `c` that are not themselves
+superseded at `t`.
+
+| Sinks reached | Status | `current` |
+| --- | --- | --- |
+| None (nothing valid at `t` supersedes `c`) | `unchanged` | `[c]` |
+| Exactly one | `resolved` | that sink |
+| More than one | `conflict` | every sink |
+
+A conflict means the chain ends in more than one place. Branches that
+converge on a single sink are not a conflict: if `b` and `d` both supersede
+`a`, and `d` also supersedes `b`, the only sink is `d` and the result is
+`resolved`. When there is a conflict, return every sink. Never pick one
+silently.
+
+A sink may be a `placeholder` atom (something referenced as the replacement
+but not held). It is returned like any other sink.
 
 Direction convention: an edge `a → b` in `r4` means `a` supersedes `b`, so the
 walk from an original uses `rev`.
@@ -339,6 +354,24 @@ Blackboard.
 
 Each extractor records its name and version as `author_id`, so re-running a
 newer extractor can retire its own older edges without touching others.
+
+### 9.1 Supersession declared in document metadata
+
+Some documents declare supersession in structured metadata rather than in
+amendment wording. The PEP sample corpus does this with header fields:
+
+- `Superseded-By: X` in document `b` gives the edge `X supersedes b`.
+- `Replaces: Y` in document `a` gives the edge `a supersedes Y`.
+- When both headers describe the same pair, they produce one edge.
+- A target that is not in the corpus becomes a `placeholder` atom.
+
+**Valid time when no effective date is stated.** Metadata like this rarely
+carries an effective date. The edge's `valid_from` is then the superseding
+document's own date: for PEPs, the `Created` header of the superseding PEP.
+`valid_to` is unbounded. An explicit effective date in the document, where
+one exists, always takes precedence over this fallback.
+
+The golden questions in `tests/golden/` depend on these rules.
 
 ---
 
