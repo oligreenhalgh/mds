@@ -1,0 +1,326 @@
+# Golden questions over examples/corpus. Format and matching rules: README.md.
+
+# --- supersedes: what currently applies (alice, today) -----------------------
+
+- id: g001
+  category: supersedes
+  question: "Which PEP replaced PEP 102 on doing micro releases?"
+  check: {tool: in_force, atom: pep-0102.rst, expect: {status: resolved, current: [pep-0101.rst]}}
+
+- id: g002
+  category: supersedes
+  question: "What replaced the string interpolation proposal in PEP 215?"
+  check: {tool: in_force, atom: pep-0215.rst, expect: {status: resolved, current: [pep-0292.rst]}}
+
+- id: g003
+  category: supersedes
+  question: "PEP 241 defined package metadata. Which metadata PEP is current now?"
+  check: {tool: in_force, atom: pep-0241.rst, expect: {status: resolved, current: [pep-0566.rst]}}
+
+- id: g004
+  category: supersedes
+  question: "Which version of the Python Database API specification replaced v1.0?"
+  check: {tool: in_force, atom: pep-0248.rst, expect: {status: resolved, current: [pep-0249.rst]}}
+
+- id: g005
+  category: supersedes
+  question: "What replaced PEP 291 on backward compatibility for the standard library?"
+  check: {tool: in_force, atom: pep-0291.rst, expect: {status: resolved, current: [pep-0387.rst]}}
+
+- id: g006
+  category: supersedes
+  question: "Which PEP is the current WSGI specification, replacing PEP 333?"
+  check: {tool: in_force, atom: pep-0333.rst, expect: {status: resolved, current: [pep-3333.rst]}}
+
+- id: g007
+  category: supersedes
+  question: "What replaced the enumerations proposal in PEP 354?"
+  check: {tool: in_force, atom: pep-0354.rst, expect: {status: resolved, current: [pep-0435.rst]}}
+
+- id: g008
+  category: supersedes
+  question: "Which PEP replaced PEP 386 on version comparison in distutils?"
+  check: {tool: in_force, atom: pep-0386.rst, expect: {status: resolved, current: [pep-0440.rst]}}
+
+- id: g009
+  category: supersedes
+  question: "What replaced PEP 433 on suppressing file descriptor inheritance?"
+  check: {tool: in_force, atom: pep-0433.rst, expect: {status: resolved, current: [pep-0446.rst]}}
+
+- id: g010
+  category: supersedes
+  question: "PEP 245 proposed interfaces. Through which chain was it replaced, and what applies now?"
+  check: {tool: in_force, atom: pep-0245.rst, expect: {status: resolved, current: [pep-0443.rst]}}
+
+- id: g011
+  category: supersedes
+  question: "PEP 381 on PyPI mirroring was replaced by more than one PEP. Which ones?"
+  check: {tool: in_force, atom: pep-0381.rst, expect: {status: conflict, current: [pep-0449.rst, pep-0464.rst]}}
+
+- id: g012
+  category: supersedes
+  question: "What replaced PEP 247 on the cryptographic hash function API?"
+  check: {tool: in_force, atom: pep-0247.rst, expect: {status: resolved, current: [pep-0452.rst]}}
+
+- id: g013
+  category: supersedes
+  question: "Which PEP replaced PEP 509's private dict version?"
+  check: {tool: in_force, atom: pep-0509.rst, expect: {status: resolved, current: [pep-0699.rst]}}
+
+- id: g014
+  category: supersedes
+  question: "What replaced the multiple interpreters proposal in PEP 554?"
+  check: {tool: in_force, atom: pep-0554.rst, expect: {status: resolved, current: [pep-0734.rst]}}
+
+- id: g015
+  category: supersedes
+  question: "What replaced PEP 563, postponed evaluation of annotations?"
+  check: {tool: in_force, atom: pep-0563.rst, expect: {status: conflict, current: [pep-0649.rst, pep-0749.rst]}}
+
+- id: g016
+  category: supersedes
+  question: "PEP 601 was rejected. Which PEP later handled return/break/continue in finally blocks?"
+  check: {tool: in_force, atom: pep-0601.rst, expect: {status: resolved, current: [pep-0765.rst]}}
+
+- id: g017
+  category: supersedes
+  question: "Which specification PEP replaced PEP 622 on structural pattern matching?"
+  check: {tool: in_force, atom: pep-0622.rst, expect: {status: resolved, current: [pep-0634.rst]}}
+
+- id: g018
+  category: supersedes
+  question: "What replaced PEP 631's dependency specification in pyproject.toml?"
+  check: {tool: in_force, atom: pep-0631.rst, expect: {status: resolved, current: [pep-0621.rst]}}
+
+- id: g019
+  category: supersedes
+  question: "Which PEP replaced PEP 665's file format for listing dependencies?"
+  check: {tool: in_force, atom: pep-0665.rst, expect: {status: resolved, current: [pep-0751.rst]}}
+
+- id: g020
+  category: supersedes
+  question: "What replaced PEP 722 on dependency specification for single-file scripts?"
+  check: {tool: in_force, atom: pep-0722.rst, expect: {status: resolved, current: [pep-0723.rst]}}
+
+- id: g021
+  category: supersedes
+  question: "Which PEP replaced PEP 724 on stricter TypeGuard?"
+  check: {tool: in_force, atom: pep-0724.rst, expect: {status: resolved, current: [pep-0742.rst]}}
+
+- id: g022
+  category: supersedes
+  question: "What replaced PEP 3153 on asynchronous IO support?"
+  check: {tool: in_force, atom: pep-3153.rst, expect: {status: resolved, current: [pep-3156.rst]}}
+
+- id: g023
+  category: supersedes
+  question: "Has PEP 566, metadata 2.1, been replaced?"
+  check: {tool: in_force, atom: pep-0566.rst, expect: {status: unchanged, current: [pep-0566.rst]}}
+
+- id: g024
+  category: supersedes
+  question: "PEP 513 defined manylinux1. What replaced it?"
+  check: {tool: in_force, atom: pep-0513.rst, expect: {status: resolved, current: ["placeholder:PEP 600"]}}
+
+- id: g025
+  category: supersedes
+  question: "PEP 599 defined manylinux2014. What replaced it?"
+  check: {tool: in_force, atom: pep-0599.rst, expect: {status: resolved, current: ["placeholder:PEP 600"]}}
+
+# --- time: what applied at a past date ---------------------------------------
+
+- id: g026
+  category: time
+  question: "Which package metadata PEP applied on 1 January 2004?"
+  check: {tool: in_force, atom: pep-0241.rst, valid_at: 2004-01-01, expect: {status: resolved, current: [pep-0314.rst]}}
+
+- id: g027
+  category: time
+  question: "Which package metadata PEP applied on 1 January 2015?"
+  check: {tool: in_force, atom: pep-0241.rst, valid_at: 2015-01-01, expect: {status: resolved, current: [pep-0426.rst]}}
+
+- id: g028
+  category: time
+  question: "On 1 January 2022, what had replaced PEP 563?"
+  check: {tool: in_force, atom: pep-0563.rst, valid_at: 2022-01-01, expect: {status: resolved, current: [pep-0649.rst]}}
+
+- id: g029
+  category: time
+  question: "On 31 December 2017, had PEP 563 been replaced?"
+  check: {tool: in_force, atom: pep-0563.rst, valid_at: 2017-12-31, expect: {status: unchanged, current: [pep-0563.rst]}}
+
+- id: g030
+  category: time
+  question: "On 1 January 2010, what applied in place of PEP 245?"
+  check: {tool: in_force, atom: pep-0245.rst, valid_at: 2010-01-01, expect: {status: resolved, current: [pep-3124.rst]}}
+
+- id: g031
+  category: time
+  question: "On 1 December 2013, what had replaced PEP 381?"
+  check: {tool: in_force, atom: pep-0381.rst, valid_at: 2013-12-01, expect: {status: resolved, current: [pep-0449.rst]}}
+
+# --- revision: what MDS knew at an earlier commit ----------------------------
+
+- id: g032
+  category: revision
+  question: "Before the PEP 563 and 649 documents were updated, did the corpus record PEP 563 as replaced?"
+  check: {tool: in_force, atom: pep-0563.rst, as_of: stage1, expect: {status: unchanged, current: [pep-0563.rst]}}
+
+- id: g033
+  category: revision
+  question: "Before the update, what did the corpus say had replaced PEP 563 as of 2022?"
+  check: {tool: in_force, atom: pep-0563.rst, as_of: stage1, valid_at: 2022-01-01, expect: {status: unchanged, current: [pep-0563.rst]}}
+
+# --- permissions --------------------------------------------------------------
+
+- id: g034
+  category: permissions
+  principal: bob
+  question: "What replaced PEP 563?"
+  check: {tool: in_force, atom: pep-0563.rst, expect: {status: resolved, current: [pep-0649.rst]}}
+
+- id: g035
+  category: permissions
+  principal: bob
+  question: "Has PEP 431 on time zone support been replaced?"
+  check: {tool: in_force, atom: pep-0431.rst, expect: {status: unchanged, current: [pep-0431.rst]}}
+
+- id: g036
+  category: permissions
+  principal: alice
+  question: "Has PEP 431 on time zone support been replaced?"
+  check: {tool: in_force, atom: pep-0431.rst, expect: {status: resolved, current: [pep-0615.rst]}}
+
+- id: g037
+  category: permissions
+  principal: bob
+  question: "Find the PEP about the IANA time zone database."
+  check: {tool: seed, query: "IANA time zone database zoneinfo", k: 10, expect: {include: [], exclude: [pep-0615.rst]}}
+
+- id: g038
+  category: permissions
+  principal: bob
+  question: "Which PEPs refer to PEP 649?"
+  check:
+    tool: traverse
+    seeds: [pep-0649.rst]
+    path: [[references, rev, 1], [contains, rev, "*"]]
+    expect: {include: [pep-0563.rst, pep-0695.rst], exclude: [pep-0749.rst]}
+
+- id: g039
+  category: permissions
+  principal: alice
+  question: "Which PEPs refer to PEP 649?"
+  check:
+    tool: traverse
+    seeds: [pep-0649.rst]
+    path: [[references, rev, 1], [contains, rev, "*"]]
+    expect: {include: [pep-0563.rst, pep-0695.rst, pep-0749.rst], exclude: []}
+
+- id: g040
+  category: permissions
+  principal: bob
+  question: "Show me the text of PEP 749."
+  check: {tool: hydrate, atoms: [pep-0749.rst], expect: {error: not_found}}
+
+# --- references ---------------------------------------------------------------
+
+- id: g041
+  category: references
+  question: "Which PEPs build on PEP 484, the type hints PEP?"
+  check:
+    tool: traverse
+    seeds: [pep-0484.rst]
+    path: [[references, rev, 1], [contains, rev, "*"]]
+    expect:
+      include: [pep-0526.rst, pep-0544.rst, pep-0563.rst, pep-0604.rst, pep-0612.rst,
+                pep-0622.rst, pep-0646.rst, pep-0649.rst, pep-0695.rst]
+      exclude: []
+
+- id: g042
+  category: references
+  question: "Which PEPs refer to PEP 508, dependency specification?"
+  check:
+    tool: traverse
+    seeds: [pep-0508.rst]
+    path: [[references, rev, 1], [contains, rev, "*"]]
+    expect:
+      include: [pep-0426.rst, pep-0518.rst, pep-0566.rst, pep-0621.rst, pep-0631.rst,
+                pep-0665.rst, pep-0722.rst, pep-0723.rst]
+      exclude: []
+
+- id: g043
+  category: references
+  question: "What does PEP 749 depend on?"
+  check:
+    tool: traverse
+    seeds: [pep-0749.rst]
+    path: [[contains, fwd, "*"], [references, fwd, 1]]
+    expect: {include: [pep-0649.rst, pep-0563.rst], exclude: []}
+
+- id: g044
+  category: references
+  question: "Which PEPs refer to PEP 345, metadata 1.2?"
+  check:
+    tool: traverse
+    seeds: [pep-0345.rst]
+    path: [[references, rev, 1], [contains, rev, "*"]]
+    expect: {include: [pep-0386.rst, pep-0426.rst, pep-0440.rst, pep-0566.rst], exclude: []}
+
+# --- contains -----------------------------------------------------------------
+
+- id: g045
+  category: contains
+  question: "What are the main sections of PEP 563?"
+  check:
+    tool: traverse
+    seeds: [pep-0563.rst]
+    path: [[contains, fwd, "*"]]
+    k: 100
+    expect:
+      include: ["pep-0563.rst › Abstract", "pep-0563.rst › Rationale and Goals",
+                "pep-0563.rst › Backwards Compatibility", "pep-0563.rst › Rejected Ideas"]
+      exclude: []
+
+- id: g046
+  category: contains
+  question: "Which PEP is the 'Event Loop Interface Specification' section part of?"
+  check:
+    tool: traverse
+    seeds: ["pep-3156.rst › Event Loop Interface Specification"]
+    path: [[contains, rev, "*"]]
+    expect: {include: [pep-3156.rst], exclude: []}
+
+# --- co_occurs ----------------------------------------------------------------
+
+- id: g047
+  category: co_occurs
+  question: "Which PEPs concern manylinux platform tags?"
+  check:
+    tool: traverse
+    seed_query: "manylinux"
+    path: [[co_occurs, fwd, 1], [contains, rev, "*"]]
+    expect: {include: [pep-0513.rst, pep-0571.rst, pep-0599.rst], exclude: []}
+
+# --- derived_from -------------------------------------------------------------
+
+- id: g048
+  category: derived_from
+  question: "Which earlier document was PEP 3333 derived from?"
+  check:
+    tool: traverse
+    seeds: [pep-3333.rst]
+    path: [[derived_from, fwd, 1]]
+    expect: {include: [pep-0333.rst], exclude: []}
+
+# --- seed ---------------------------------------------------------------------
+
+- id: g049
+  category: seed
+  question: "Which PEP introduced the asyncio module?"
+  check: {tool: seed, query: "asyncio module event loop", k: 10, expect: {include: [pep-3156.rst], exclude: []}}
+
+- id: g050
+  category: seed
+  question: "Find the PEP on inline script metadata."
+  check: {tool: seed, query: "inline script metadata", k: 10, expect: {include: [pep-0723.rst], exclude: []}}
