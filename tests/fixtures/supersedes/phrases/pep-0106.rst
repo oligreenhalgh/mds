@@ -1,0 +1,13 @@
+PEP: 106
+Title: Phrase Fixture Number 106
+Author: A. Author <a@example.org>
+Status: Final
+Created: 06-Jun-2012
+
+
+Abstract
+========
+
+PEP 104 has been retired in favour of this PEP.
+
+In this PEP, the reference to PEP 100 is replaced by PEP 102.

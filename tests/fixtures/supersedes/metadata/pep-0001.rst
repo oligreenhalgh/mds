@@ -1,0 +1,12 @@
+PEP: 1
+Title: Example Proposal Number 1
+Author: A. Author <a@example.org>
+Status: Final
+Superseded-By: 2
+Created: 01-Jan-2001
+
+
+Abstract
+========
+
+The first example.

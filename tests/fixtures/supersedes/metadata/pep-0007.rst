@@ -1,0 +1,13 @@
+PEP: 7
+Title: Example Proposal Number 7
+Author: A. Author <a@example.org>
+Status: Final
+Replaces: 5
+Effective-Date: 2008-01-01
+Created: 07-Jul-2007
+
+
+Abstract
+========
+
+Has an explicit effective date.

@@ -1,0 +1,11 @@
+PEP: 9
+Title: Example Proposal Number 9
+Author: A. Author <a@example.org>
+Status: Final
+Created: 09-Sep-2009
+
+
+Abstract
+========
+
+Superseding PEP 8 is declared only by the directive in PEP 8.

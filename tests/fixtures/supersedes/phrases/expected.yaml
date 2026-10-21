@@ -1,0 +1,12 @@
+# Hand-written supersedes edges for the amendment-wording fixtures.
+# src supersedes dst; keys are paths relative to this folder. Some are
+# deliberately out of reach of the v1 phrase rules (marked "missed") so recall
+# is measured honestly.
+- {src: retention-2023.md, dst: retention-2019.md, valid_from: 2023-04-01}
+- {src: amendment-order.md, dst: handbook.md, valid_from: 2024-06-01}
+- {src: amendment-order.md, dst: expenses.md, valid_from: 2024-06-01}
+- {src: "placeholder:PEP 105", dst: pep-0100.rst, valid_from: null}
+- {src: pep-0101.rst, dst: pep-0100.rst, valid_from: 2011-03-01}
+- {src: pep-0107.rst, dst: pep-0101.rst, valid_from: 2013-07-07}
+- {src: pep-0106.rst, dst: "placeholder:PEP 104", valid_from: 2012-06-06}  # missed: "retired in favour of"
+- {src: notice.md, dst: handbook.md, valid_from: null}  # missed: "no longer in force; ... takes its place"

@@ -1,0 +1,14 @@
+PEP: 101
+Title: Phrase Fixture Number 101
+Author: A. Author <a@example.org>
+Status: Final
+Created: 10-Oct-2010
+
+
+Abstract
+========
+
+This PEP replaces :pep:`100` with effect from 1 March 2011.
+
+This PEP supplements rather than supersedes PEP 102. If accepted, this PEP
+would *supersede* :pep:`103`. PEP 104 is in danger of being superseded.

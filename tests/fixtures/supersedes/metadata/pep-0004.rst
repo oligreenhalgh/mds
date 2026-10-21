@@ -1,0 +1,13 @@
+PEP: 4
+Title: Example Proposal Number 4
+Author: A. Author <a@example.org>
+Status: Final
+Replaces: 1, 3,
+          77
+Created: 04-Apr-2004
+
+
+Abstract
+========
+
+Replaces several, one of them not held.
