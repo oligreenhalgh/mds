@@ -54,7 +54,7 @@ Tasks in the same wave touch different modules and can run in parallel.
   operator; masks proven to exclude hidden atoms from scores.
 - [ ] **T26 in_force** (`src/mds/engine/inforce.py`). Chains, unchanged,
   conflicts (D §5.5).
-- [ ] **T27 Seeding** (`src/mds/seed/`). Tantivy BM25 with per-class
+- [x] **T27 Seeding** (`src/mds/seed/`). Tantivy BM25 with per-class
   statistics; small dense index; entity match; reciprocal rank fusion; masking
   (D §8).
 
