@@ -47,7 +47,7 @@ Tasks in the same wave touch different modules and can run in parallel.
   Accept: precision and recall reported on fixtures.
 - [ ] **T24 Entities and co_occurs.** Entity spans (dictionary first, GLiNER
   optional), `E`, IDF, pruning (D §3.3).
-- [ ] **T25 Engine** (`src/mds/engine/`). Build matrices from the store; vertex
+- [x] **T25 Engine** (`src/mds/engine/`). Build matrices from the store; vertex
   and evidence masks; valid-time edge mask; four operators; typed paths;
   `top_k` and degree cap; ranking (D §5).
   Accept: tests against hand-computed results on small graphs; every
