@@ -1,0 +1,18 @@
+PEP: 9002
+Title: Example Referenced Rules
+Author: B. Author <b@example.org>
+Status: Final
+Created: 01-Dec-2023
+
+
+Abstract
+========
+
+Readers should see Appendix A of PEP 9001 and section 2 of PEP 9001.
+The term is defined in section 7.6 of
+the language reference.
+
+Rationale
+=========
+
+Because. Compare PEPs 9001 and 9003, and `PEP 9001 <pep-9001.rst#rationale>`_.
