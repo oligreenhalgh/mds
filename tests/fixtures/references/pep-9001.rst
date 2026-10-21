@@ -1,0 +1,41 @@
+PEP: 9001
+Title: Example Referencing Rules
+Author: A. Author <a@example.org>
+Status: Draft
+Requires: 9002, 9500
+Created: 01-Jan-2024
+Post-History: `02-Jan-2024 <https://discuss.example.org/t/1>`__
+
+
+Abstract
+========
+
+This PEP 9001 builds on :pep:`9002` and on PEP 9500, which is not held.
+See `Rationale`_ for why.
+
+.. _spec-label:
+
+Specification
+=============
+
+The format follows :rfc:`2616`, Section 6.1.1, and the rules in
+:pep:`the rationale of PEP 9002 <9002#rationale>`.
+
+Example::
+
+    PEP 9002 and https://example.org/in-code are not references here.
+
+Details are in Appendix A. A `full listing <https://peps.python.org/pep-9002/>`_
+is published. See also :ref:`typing:generics` and the `glossary`_.
+
+Rationale
+=========
+
+The specification is in :ref:`spec-label`. The ``PEP 9002`` literal is code.
+
+Appendix A: Worked examples
+===========================
+
+Back to the `Abstract`_, as the Specification above explains.
+
+.. _glossary: https://example.org/glossary

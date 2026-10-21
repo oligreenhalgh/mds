@@ -40,7 +40,7 @@ Tasks in the same wave touch different modules and can run in parallel.
 - [ ] **T21 Containment and re-anchoring** (`src/mds/ingest/`). `contains`
   edges from the section tree; heading-path and MinHash matching on revision;
   `derived_from` for splits and merges (D §2.2).
-- [ ] **T22 References extractor.** Pattern rules and resolution order (D §9).
+- [x] **T22 References extractor.** Pattern rules and resolution order (D §9).
   Accept: precision and recall reported on fixtures.
 - [ ] **T23 Supersedes extractor.** Amendment phrase rules, target resolution,
   effective dates (D §9).
