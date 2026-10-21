@@ -45,7 +45,7 @@ Tasks in the same wave touch different modules and can run in parallel.
 - [ ] **T23 Supersedes extractor.** Amendment phrase rules, target resolution,
   effective dates (D §9).
   Accept: precision and recall reported on fixtures.
-- [ ] **T24 Entities and co_occurs.** Entity spans (dictionary first, GLiNER
+- [x] **T24 Entities and co_occurs.** Entity spans (dictionary first, GLiNER
   optional), `E`, IDF, pruning (D §3.3).
 - [x] **T25 Engine** (`src/mds/engine/`). Build matrices from the store; vertex
   and evidence masks; valid-time edge mask; four operators; typed paths;
