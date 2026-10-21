@@ -1,0 +1,12 @@
+PEP: 5
+Title: Example Proposal Number 5
+Author: A. Author <a@example.org>
+Status: Final
+Superseded-By: 6, 7
+Created: 05-May-2005
+
+
+Abstract
+========
+
+Replaced by two PEPs, so in_force is a conflict.

@@ -1,0 +1,11 @@
+PEP: 100
+Title: Phrase Fixture Number 100
+Author: A. Author <a@example.org>
+Status: Final
+Created: 01-Jan-2010
+
+
+Abstract
+========
+
+*Note: this PEP was superseded by* :pep:`105`, *which has been accepted.*

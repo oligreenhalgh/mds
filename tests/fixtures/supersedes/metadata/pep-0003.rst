@@ -1,0 +1,12 @@
+PEP: 3
+Title: Example Proposal Number 3
+Author: A. Author <a@example.org>
+Status: Final
+Superseded-By: 600
+Created: 03-Mar-2003
+
+
+Abstract
+========
+
+Replaced by a PEP that is not held.

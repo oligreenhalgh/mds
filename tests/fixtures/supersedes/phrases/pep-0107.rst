@@ -1,0 +1,15 @@
+PEP: 107
+Title: Phrase Fixture Number 107
+Author: A. Author <a@example.org>
+Status: Final
+Replaces: 101
+Created: 07-Jul-2013
+
+
+Abstract
+========
+
+Rationale
+=========
+
+This PEP supersedes :pep:`Phrase Fixture <101>` and is the current version.

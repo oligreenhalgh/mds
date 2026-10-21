@@ -1,0 +1,10 @@
+# Hand-written supersedes edges for the metadata fixtures (DESIGN §9.1).
+# src supersedes dst; keys are paths relative to this folder.
+- {src: pep-0002.rst, dst: pep-0001.rst, valid_from: 2002-02-15}  # both headers: one edge
+- {src: "placeholder:PEP 600", dst: pep-0003.rst, valid_from: null}  # superseding PEP not held
+- {src: pep-0004.rst, dst: pep-0001.rst, valid_from: 2004-04-04}
+- {src: pep-0004.rst, dst: pep-0003.rst, valid_from: 2004-04-04}
+- {src: pep-0004.rst, dst: "placeholder:PEP 77", valid_from: 2004-04-04}
+- {src: restricted/pep-0006.rst, dst: pep-0005.rst, valid_from: 2006-06-06}
+- {src: pep-0007.rst, dst: pep-0005.rst, valid_from: 2008-01-01}  # Effective-Date wins over Created
+- {src: pep-0009.rst, dst: pep-0008.rst, valid_from: 2009-09-09}  # .. superseded:: directive

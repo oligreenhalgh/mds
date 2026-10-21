@@ -1,0 +1,11 @@
+PEP: 102
+Title: Phrase Fixture Number 102
+Author: A. Author <a@example.org>
+Status: Final
+Created: 02-Feb-2010
+
+
+Abstract
+========
+
+This PEP has been superseded by the newer packaging specification.

@@ -1,0 +1,11 @@
+PEP: 6
+Title: Example Proposal Number 6
+Author: A. Author <a@example.org>
+Status: Final
+Created: 06-Jun-2006
+
+
+Abstract
+========
+
+Held in a restricted folder.
